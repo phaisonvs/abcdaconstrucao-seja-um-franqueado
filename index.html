@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC Franquias</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/carrossel.css">
+    <script src="assets/js/carrossel.js" defer></script>
+    <script src="assets/js/menu-mobile.js" defer></script>
+    <script src="https://unpkg.com/@phosphor-icons/web" defer></script>
+    <script src="assets/js/carrossel.js" defer></script>
+    <script src="assets/js/idade-abc.js" defer></script>
+    <script src="assets/js/galeria-slider.js" defer></script>
+    <script src="assets/js/formulario.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="full-container-menu">
+            <div class="content-menu">
+                <button class="menu-icon" aria-label="Abrir menu">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M4 6h16M4 12h16M4 18h16" stroke="#fff" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                </button>
+                <div class="logo-container">
+                    <img src="assets/images/logo-abc.svg" alt="ABC da Construção" class="logo">
+                </div>
+                <nav class="navbar">
+                    <a href="#" class="menu-item">Guide Shops</a>
+                    <a href="#" class="menu-item">Modelo de Negócio</a>
+                    <a href="#" class="menu-item">Serviços</a>
+                    <a href="#" class="menu-item">Programa de Indicação</a>
+                    <a href="#" class="menu-item">Dúvidas</a>
+                </nav>
+                <div class="cta-container">
+                    <a href="#" class="cta-button">QUERO UMA FRANQUIA</a>
+                </div>
+            </div>
+        </div>
+        <div class="fullbanner">
+            <img src="assets/images/marcio-garcia-abc.png" alt="Seja um Franqueado">
+            <a href="#" class="cta-falar-com-especialista">
+                <img src="assets/images/icon-falar-com-especialista.svg" alt="Ícone Falar com Especialista"
+                    class="icon-falar-com-especialista">
+                <span class="falar-com-especialista">FALAR COM ESPECIALISTA</span>
+            </a>
+        </div>
+    </header>
+
+    <section class="seja-um-franqueado">
+        <div class="conteudo-seja-um-franqueado-abc">
+            <!-- SEJA UM FRANQUEADO -->
+            <img class="svg-suf-desk" src="assets/images/suf-desk.svg" alt="Seja um franqueado">
+            <img class="svg-suf-mobile" src="assets/images/suf-mobile.svg" alt="Seja um franqueado">
+
+            <!-- E FAÇA PARTE DA MAIOR REDE DE ACABAMENTOS -->
+            <div class="faca-parte">
+                <div class="texto-faca-parte">
+                    <h1 class="sr-only">Seja um Franqueado ABC da Construção em ABC da Construção</h1>
+                    <h2 class="maior-rede-de-acabamentos">e faça parte da maior rede de acabamentos do Brasil!</h2>
+
+                    <p class="subtexto">
+                        Ao se juntar à ABC da Construção, líder em inovação, você pode faturar milhões com o modelo
+                        exclusivo de Guide Shop.
+                    </p>
+                </div>
+                <div class="escudos-times">
+                    <img class="escudos" src="assets/images/escudos-times.png" alt="Patrocinadores oficiais">
+                </div>
+            </div>
+
+
+            <!--BIG NUMBERS-->
+            <div class="big-numbers">
+                <ul>
+                    <li>
+                        <div>
+                            <img class="big-numbers__icon" src="/assets/images/bn-icon-guides.png">
+                        </div>
+                        <div class="big-numbers__info">
+                            <span class="number">+500</span>
+                            <span> Guide Shops espalhadas no Brasil</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img class="big-numbers__icon" src="/assets/images/bn-icon-cidades.png">
+                        </div>
+                        <div class="big-numbers__info">
+                            <span class="number">+1.100</span>
+                            <span> cidades possuem cobertura ABC</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img class="big-numbers__icon" src="/assets/images/bn-icon-10x-agil.png">
+                        </div>
+                        <div class="big-numbers__info">
+                            <span class="number">10x</span>
+                            <span> mais ágil em logística prioritária</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img class="big-numbers__icon" src="/assets/images/bn-estados.png">
+                        </div>
+                        <div class="big-numbers__info">
+                            <span class="number">+10</span>
+                            <span> estados do Brasil estão com a ABC</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img class="big-numbers__icon" src="/assets/images/bn-idade-abc.png">
+                        </div>
+
+                        <div class="big-numbers__info">
+                            <span class="number" id="experience-years"></span>
+                            <span> anos de experiência no varejo</span>
+                        </div>
+
+                    </li>
+                    <li>
+                        <div>
+                            <img class="big-numbers__icon" src="/assets/images/bn-icon-centros-distribuicao.png">
+                        </div>
+                        <div class="big-numbers__info">
+                            <span class="number">21</span>
+                            <span> centros de distribuição no Brasil</span>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+
+
+            <!-- NOSSAS GUIDE SHOPS -->
+            <div class="nossas-guides-container">
+                <h3>Nossas Guide Shops</h3>
+
+                <p class="subtexto-guide">
+                    Oferecemos um conceito inovador de franquia, unindo
+                    soluções físicas e digitais que aumentam o faturamento.
+                </p>
+            </div>
+        </div>
+
+
+        <!--CARROSSEL JS-->
+        <div class="carousel">
+            <div class="carousel__track">
+                <!--Loja 1-->
+                <div class="carousel__card">
+                    <img src="assets/images/fachadas/1-montes-claros-mg.png" alt="Guide Shop 2">
+                    <div class="gradient-overlay"></div>
+                    <div class="text-content">
+                        <div class="cidade-guide-shop">Montes Claros MG</div>
+                        <div class="guide-shop-abc-da-construcao">Guide Shop ABC da Construção</div>
+                    </div>
+                </div>
+                <!--Loja 2-->
+                <div class="carousel__card">
+                    <img src="assets/images/fachadas/2-ns.senhora-do-carmo-mg.png" alt="Guide Shop 3">
+                    <div class="gradient-overlay"></div>
+                    <div class="text-content">
+                        <div class="cidade-guide-shop">N. Sra. do Carmo MG</div>
+                        <div class="guide-shop-abc-da-construcao">Guide Shop ABC da Construção</div>
+                    </div>
+                </div>
+                <!--Loja 3-->
+                <div class="carousel__card">
+                    <img src="assets/images/fachadas/3-linhares-es.png" alt="Guide Shop 4">
+                    <div class="gradient-overlay"></div>
+                    <div class="text-content">
+                        <div class="cidade-guide-shop">Linhares MG</div>
+                        <div class="guide-shop-abc-da-construcao">Guide Shop ABC da Construção</div>
+                    </div>
+                </div>
+                <!--Loja 4-->
+                <div class="carousel__card">
+                    <img src="assets/images/fachadas/4-vila-velha-es.png" alt="Guide Shop 5">
+                    <div class="gradient-overlay"></div>
+                    <div class="text-content">
+                        <div class="cidade-guide-shop">Vila Velha ES</div>
+                        <div class="guide-shop-abc-da-construcao">Guide Shop ABC da Construção</div>
+                    </div>
+                </div>
+                <!--Loja 5-->
+                <div class="carousel__card">
+                    <img src="assets/images/fachadas/5-vitoria-da-conquita-ba.png" alt="Guide Shop 6">
+                    <div class="gradient-overlay"></div>
+                    <div class="text-content">
+                        <div class="cidade-guide-shop">Vitória da Conquista BA</div>
+                        <div class="guide-shop-abc-da-construcao">Guide Shop ABC da Construção</div>
+                    </div>
+                </div>
+                <!--Loja 6-->
+                <div class="carousel__card">
+                    <img src="assets/images/fachadas/6-teixeira-de-freitas-ba.png" alt="Guide Shop 7">
+                    <div class="gradient-overlay"></div>
+                    <div class="text-content">
+                        <div class="cidade-guide-shop">Teixeira de Freitas BA</div>
+                        <div class="guide-shop-abc-da-construcao">Guide Shop ABC da Construção</div>
+                    </div>
+                </div>
+                <!--Loja 7-->
+                <div class="carousel__card">
+                    <img src="assets/images/fachadas/7-niteroi-rj.png" alt="Guide Shop 8">
+                    <div class="gradient-overlay"></div>
+                    <div class="text-content">
+                        <div class="cidade-guide-shop">Niterói RJ</div>
+                        <div class="guide-shop-abc-da-construcao">Guide Shop ABC da Construção</div>
+                    </div>
+                </div>
+                <!--Loja 8-->
+                <div class="carousel__card">
+                    <img src="assets/images/fachadas/8-leblon-rj.png" alt="Guide Shop 9">
+                    <div class="gradient-overlay"></div>
+                    <div class="text-content">
+                        <div class="cidade-guide-shop">Leblon RJ</div>
+                        <div class="guide-shop-abc-da-construcao">Guide Shop ABC da Construção</div>
+                    </div>
+                </div>
+                <!--Loja 9-->
+                <div class="carousel__card">
+                    <img src="assets/images/fachadas/9-goiania-goias.png" alt="Guide Shop 10">
+                    <div class="gradient-overlay"></div>
+                    <div class="text-content">
+                        <div class="cidade-guide-shop">Goiânia GO</div>
+                        <div class="guide-shop-abc-da-construcao">Guide Shop ABC da Construção</div>
+                    </div>
+                </div>
+                <!--Loja 10-->
+                <div class="carousel__card">
+                    <img src="assets/images/fachadas/10-caldas-novas-go.png" alt="Guide Shop 11">
+                    <div class="gradient-overlay"></div>
+                    <div class="text-content">
+                        <div class="cidade-guide-shop">Caldas Novas GO</div>
+                        <div class="guide-shop-abc-da-construcao">Guide Shop ABC da Construção</div>
+                    </div>
+                </div>
+                <!--Loja 11-->
+                <div class="carousel__card">
+                    <img src="assets/images/fachadas/11-londrina-pr.png" alt="Guide Shop 12">
+                    <div class="gradient-overlay"></div>
+                    <div class="text-content">
+                        <div class="cidade-guide-shop">Londrina PR</div>
+                        <div class="guide-shop-abc-da-construcao">Guide Shop ABC da Construção</div>
+                    </div>
+                </div>
+                <!--Loja 12-->
+                <div class="carousel__card">
+                    <img src="assets/images/fachadas/12-balneario-sc.png" alt="Guide Shop 13">
+                    <div class="gradient-overlay"></div>
+                    <div class="text-content">
+                        <div class="cidade-guide-shop">Balneário Camboriú SC</div>
+                        <div class="guide-shop-abc-da-construcao">Guide Shop ABC da Construção</div>
+                    </div>
+                </div>
+                <!--Loja 13-->
+                <div class="carousel__card">
+                    <img src="assets/images/fachadas/13-campo-grande-mts.png" alt="Guide Shop 13">
+                    <div class="gradient-overlay"></div>
+                    <div class="text-content">
+                        <div class="cidade-guide-shop">Campo Grande MS</div>
+                        <div class="guide-shop-abc-da-construcao">Guide Shop ABC da Construção</div>
+                    </div>
+                </div>
+                <!--Loja 14-->
+                <div class="carousel__card">
+                    <img src="assets/images/fachadas/14-florianopolis-sc.png" alt="Guide Shop 13">
+                    <div class="gradient-overlay"></div>
+                    <div class="text-content">
+                        <div class="cidade-guide-shop">Florianópolis SC</div>
+                        <div class="guide-shop-abc-da-construcao">Guide Shop ABC da Construção</div>
+                    </div>
+                </div>
+                <!--Loja 15-->
+                <div class="carousel__card">
+                    <img src="assets/images/fachadas/15-sorocaba-sp.png" alt="Guide Shop 13">
+                    <div class="gradient-overlay"></div>
+                    <div class="text-content">
+                        <div class="cidade-guide-shop">Sorocaba - SP</div>
+                        <div class="guide-shop-abc-da-construcao">Guide Shop ABC da Construção</div>
+                    </div>
+                </div>
+                <!--Loja 16-->
+                <div class="carousel__card">
+                    <img src="assets/images/fachadas/16-mogi-das-cruzes.png" alt="Guide Shop 13">
+                    <div class="gradient-overlay"></div>
+                    <div class="text-content">
+                        <div class="cidade-guide-shop">Mogi das Cruzes SP</div>
+                        <div class="guide-shop-abc-da-construcao">Guide Shop ABC da Construção</div>
+                    </div>
+                </div>
+                <!--Loja 17-->
+                <div class="carousel__card">
+                    <img src="assets/images/fachadas/17-sao-jose-dos-campos-sp.png" alt="Guide Shop 13">
+                    <div class="gradient-overlay"></div>
+                    <div class="text-content">
+                        <div class="cidade-guide-shop">São José dos Campos SP</div>
+                        <div class="guide-shop-abc-da-construcao">Guide Shop ABC da Construção</div>
+                    </div>
+                </div>
+                <!--Loja 18-->
+                <div class="carousel__card">
+                    <img src="assets/images/fachadas/18-curitiba-pr.png" alt="Guide Shop 13">
+                    <div class="gradient-overlay"></div>
+                    <div class="text-content">
+                        <div class="cidade-guide-shop">Curitiba PR</div>
+                        <div class="guide-shop-abc-da-construcao">Guide Shop ABC da Construção</div>
+                    </div>
+                </div>
+                <!--Loja 19-->
+                <div class="carousel__card">
+                    <img src="assets/images/fachadas/19-pedro-ii-bh-mg.png" alt="Guide Shop 13">
+                    <div class="gradient-overlay"></div>
+                    <div class="text-content">
+                        <div class="cidade-guide-shop">BH - Pedro II MG</div>
+                        <div class="guide-shop-abc-da-construcao">Guide Shop ABC da Construção</div>
+                    </div>
+                </div>
+                <!--Loja 20-->
+                <div class="carousel__card">
+                    <img src="assets/images/fachadas/20-campinas-sp.png" alt="Guide Shop 13">
+                    <div class="gradient-overlay"></div>
+                    <div class="text-content">
+                        <div class="cidade-guide-shop">Campinas SP</div>
+                        <div class="guide-shop-abc-da-construcao">Guide Shop ABC da Construção</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="modelo-de-negocio">
+        <h2>
+            ABC da Construção tem <span>soluções para seu negócio</span>
+        </h2>
+        <br>
+        <p class="modelo-de-negocio__info"> Soluções digitais e físicas, projetadas para aumentar o faturamento e
+            fortalecer o crescimento da sua franquia ABC da Construção.
+        </p>
+        <br>
+        <div class="cards-solucoes-negocio">
+            <div class="card-negocio">
+                <div class="card-container">
+                    <div class="card-image">
+                        <img src="assets/images/negocio-logistica-integrada.png" alt="Caminhões da ABC da Construção">
+                    </div>
+                    <div class="card-content">
+                        <h1><span class="highlight">Logística Integrada</span> e eficiente com a ABC da Construção</h1>
+                        <ul class="benefits">
+                            <li>
+                                <strong>Reduza custos e aumente lucros</strong> com a operação logística otimizada da
+                                ABC.
+                            </li>
+                            <li>
+                                <strong>Gestão logística ABC:</strong> cuidamos de todo o processo de distribuição para
+                                você.
+                            </li>
+                            <li>
+                                <strong>Expanda seu negócio com a ABC</strong> e foque no que realmente importa:
+                                crescer.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card-negocio">
+                <div class="card-container">
+                    <div class="card-image">
+                        <img src="assets/images/negocio-portfolio.png" alt="Caminhões da ABC da Construção">
+                    </div>
+                    <div class="card-content">
+                        <h1><span class="highlight">Portfólio para Construções</span> mais Completo do Brasil</h1>
+                        <ul class="benefits">
+                            <li>
+                                <strong>+15 mil produtos disponíveis</strong> para qualquer tipo de projeto,
+                                credibilidade ABC da Construção.
+                            </li>
+                            <li>
+                                <strong>Preços competitivos</strong> assegurados por acordos com os principais
+                                fornecedores.
+                            </li>
+                            <li>
+                                Leve <strong>o melhor mix de produtos</strong> para sua loja, com garantia de satisfação
+                                e variedade.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card-negocio">
+                <div class="card-container">
+                    <div class="card-image">
+                        <img src="assets/images/negocio-plataforma-digital.png" alt="Caminhões da ABC da Construção">
+                    </div>
+                    <div class="card-content">
+                        <h1><span class="highlight">Plataforma Digital da ABC</span> Para Gestão de vendas Completa
+                        </h1>
+                        <ul class="benefits">
+                            <li>
+                                <strong>Gerencie todas as fases do negócio</strong> com soluções digitais de uma
+                                verdadeira construtech.
+                            </li>
+                            <li>
+                                <strong>Mais engajamento e retenção de clientes</strong> precisamente fidelizados.
+                            </li>
+                            <li>
+                                <strong>Distribuição de leads</strong> para maximizar conversões e conectar o cliente
+                                ideal.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card-negocio">
+                <div class="card-container">
+                    <div class="card-image">
+                        <img src="assets/images/negocio-mais-do-que-acabamentos.png"
+                            alt="Caminhões da ABC da Construção">
+                    </div>
+                    <div class="card-content">
+                        <h1>Ser <span class="highlight">ABC da Construção é Muito Mais</span> do que só Acabamentos</h1>
+                        <ul class="benefits">
+                            <li>
+                                <strong>Ambiente digital completo</strong> para maximizar a eficiência e os resultados
+                                do seu negócio.
+                            </li>
+                            <li>
+                                <strong>Fintech, E-commerce, ABC Prime e ABC Experience</strong> tornam seu negócio mais
+                                competitivo.
+                            </li>
+                            <li>
+                                <strong>Destaque-se no mercado</strong> ao oferecer uma experiências exclusivas.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="conheca-modelos-negocio">
+            <h2 style="text-align: center;">
+                Conheça Nossos <span>3 Modelos de Negócio</span> para Franquias
+            </h2>
+            <div class="modelo-fraquias">
+                <div class="card-modelo-franquias">
+                    <img src="./assets/images/modelo-light.png">
+                    <div class="info">
+                        <div class="icon-texto-modelo-franquia">
+                            <img class="icon" src="./assets/images/icon-modelo-franquia.png" alt="Icon Modelo Franquia">
+                            <h4>Light</h4>
+                        </div>
+                        <p>Ideal para espaços compactos, oferece uma operação enxuta e eficiente, garantindo toda a
+                            experiência ABC em menor escala,
+                            com foco em resultados rápidos e eficazes.</p>
+                    </div>
+                </div>
+                <div class="card-modelo-franquias">
+                    <img src="./assets/images/modelo-multi.png">
+                    <div class="info">
+                        <div class="icon-texto-modelo-franquia">
+                            <img class="icon" src="./assets/images/icon-modelo-franquia.png" alt="Icon Modelo Franquia">
+                            <h4>Multi</h4>
+                        </div>
+                        <p>Combinando flexibilidade e abrangência, o modelo <strong>Guide Shop Multi</strong>
+                            proporciona uma estrutura que equilibra
+                            espaço e eficiência para maximizar o retorno.</p>
+                    </div>
+                </div>
+                <div class="card-modelo-franquias">
+                    <img src="./assets/images/modelo-total.png">
+                    <div class="info">
+                        <div class="icon-texto-modelo-franquia">
+                            <img class="icon" src="./assets/images/icon-modelo-franquia.png" alt="Icon Modelo Franquia">
+                            <h4>Total</h4>
+                        </div>
+                        <p>Nossa solução mais robusta, a <strong>Guide Shop Total</strong> oferece a experiência
+                            completa da ABC, com mais espaço e
+                            capacidade para expandir suas operações e maximizar as vendas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--ABC X-->
+    <section class="section-abc-x">
+        <div class="content-abcx">
+            <div class="text-abcx">
+                <div class="logo-abc-x">
+                    <img src="assets/images/logo-abc-x.svg" alt="Logo ABC X">
+                </div>
+                <h3>
+                    Programa de Parceria para<br>
+                    <span>Especificadores</span>
+                </h3>
+                <br>
+                <p>
+                    <strong>Conecte-se com arquitetos, decoradores e designers,<br></strong>
+                    <span>podendo gerar oportunidades e vendas qualificadas.</span>
+                </p>
+            </div>
+        </div>
+
+        <!-- Galeria de Imagens -->
+        <div class="container-gallery-abcx">
+            <!-- Coluna 1 -->
+            <div class="column-abcx">
+                <div class="img-abcx">
+                    <img src="assets/images/abc-x/abcx-fotos1.png" alt="Descrição da imagem 1">
+                </div>
+                <div class="img-abcx">
+                    <img src="assets/images/abc-x/abcx-fotos2.png" alt="Descrição da imagem 2">
+                </div>
+            </div>
+
+            <!-- Coluna 2 -->
+            <div class="column-abcx">
+                <div class="img-abcx">
+                    <img src="assets/images/abc-x/abcx-fotos3.png" alt="Descrição da imagem 3">
+                </div>
+                <div class="img-abcx">
+                    <img src="./assets/images/abc-x/abcx-fotos4.png" alt="Descrição da imagem 4">
+                </div>
+            </div>
+
+            <!-- Coluna 3 -->
+            <div class="column-abcx">
+                <div class="img-abcx">
+                    <img src="assets/images/abc-x/abcx-fotos5.png" alt="Descrição da imagem 5">
+                </div>
+                <div class="img-abcx">
+                    <img src="assets/images/abc-x/abcx-fotos6.png" alt="Descrição da imagem 6">
+                </div>
+            </div>
+
+            <!-- Coluna 4 -->
+            <div class="column-abcx">
+                <div class="img-abcx">
+                    <img src="assets/images/abc-x/abcx-fotos7.png" alt="Descrição da imagem 7">
+                </div>
+                <div class="img-abcx">
+                    <img src="assets/images/abc-x/abcx-fotos8.png" alt="Descrição da imagem 8">
+                </div>
+            </div>
+
+            <!-- Coluna 5 -->
+            <div class="column-abcx">
+                <div class="img-abcx">
+                    <img src="assets/images/abc-x/abcx-fotos9.png" alt="Descrição da imagem 9">
+                </div>
+                <div class="img-abcx">
+                    <img src="assets/images/abc-x/abcx-fotos10.png" alt="Descrição da imagem 10">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--ABC PRIME-->
+    <section class="section-prime">
+        <div class="content-prime">
+            <div class="text-prime">
+                <div class="logo-prime">
+                    <img src="assets/images/logo-abc-prime.png" alt="Logo ABC Prime">
+                </div>
+                <h3>
+                    Nosso <span>Clube de Assinatura</span> é
+                    <span>Inédito</span> e <span>Exclusivo</span> no Mercado de Casa e Construção
+                </h3>
+                <p>
+                    Transforme seu negócio com receita recorrente, ampliando seu mix e potencial de crescimento com o
+                    ABC Prime.
+                </p>
+            </div>
+        </div>
+
+        <!-- Galeria de Imagens -->
+        <div class="container-gallery-prime">
+            <!-- Coluna 1 -->
+            <div class="column-prime">
+                <div class="img-prime">
+                    <img src="assets/images/abc-prime/" alt="Imagem 1">
+                </div>
+                <div class="img-prime">
+                    <img src="assets/images/abc-prime/2-abc-prime.png" alt="Imagem 2">
+                </div>
+            </div>
+
+            <!-- Coluna 2 -->
+            <div class="column-prime">
+                <div class="img-prime">
+                    <img src="assets/images/abc-prime/3-abc-prime.png" alt="Imagem 3">
+                </div>
+                <div class="img-prime">
+                    <img src="assets/images/abc-prime/4-abc-prime.png" alt="Imagem 4">
+                </div>
+            </div>
+
+            <!-- Coluna 4 -->
+            <div class="column-prime">
+                <div class="img-prime">
+                    <img src="assets/images/abc-prime/5-abc-prime.png" alt="Imagem 5">
+                </div>
+                <div class="img-prime">
+                    <img src="assets/images/abc-prime/6-abc-prime.png" alt="Imagem 6">
+                </div>
+            </div>
+
+            <!-- Coluna 4 -->
+            <div class="column-prime">
+                <div class="img-prime">
+                    <img src="assets/images/prime-foto5.png" alt="Imagem 5">
+                </div>
+                <div class="img-prime">
+                    <img src="assets/images/prime-foto6.png" alt="Imagem 6">
+                </div>
+            </div>
+
+            <!-- Coluna 5 -->
+            <div class="column-prime">
+                <div class="img-prime">
+                    <img src="assets/images/prime-foto5.png" alt="Imagem 5">
+                </div>
+                <div class="img-prime">
+                    <img src="assets/images/prime-foto6.png" alt="Imagem 6">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--FORMULÁRIO-->
+    <section class="section-formulario">
+        <div class="form-container">
+            <div class="franquia-info">
+                <h1>Seja um franqueado <br>ABC da Construção. <br>Preencha o formulário para começar.
+                </h1>
+                <br>
+                <br>
+                <p>A ABC da Construção oferece um modelo de franquia revolucionário, com múltiplas fontes de receita e
+                    um
+                    sistema comprovado de sucesso.</p>
+                <p>Com acesso exclusivo ao nosso inovador modelo da Guide Shops, com abordagem focada e plataformas
+                    digitais
+                    exclusivas, você terá todas as ferramentas e serviços ABC para alargar o sucesso do seu negócio.</p>
+            </div>
+            <div class="forms">
+                <div class="form-title">
+                    <figure>
+                        <img src="assets/images/form-mini-franquia-abc.svg" alt="">
+                    </figure>
+                    <p id="titleStep1" class="forms-title">Selecione quanto você pretende investir:</p>
+                    <p id="titleStep2" style="display: none;" class="forms-title">Informe seus dados:</p>
+                    <p id="titleStep3" style="display: none;" class="forms-title">E por fim... <br>Qual a sua
+                        localização?
+                    </p>
+                    <p id="titleStep4" style="display: none;" class="forms-title">Parabéns!<br><span>Você está a poucos
+                            passos de se tornar um franqueado da maior construtech em acabamentos do Brasil</span></p>
+                    <br>
+                    <div class="container-progress-bar">
+                        <div class="line-progress">
+                            <div id="progress-bar"></div>
+                        </div>
+                        <output id="progress-percent">0%</output>
+                    </div>
+                </div>
+                <form action="#">
+                    <div id="formStep1">
+                        <button type="button" class="botao-investimento" value="Até R$150 mil">Até <strong>R$150
+                                mil</strong></button>
+                        <button type="button" class="botao-investimento" value="R$150 mil a R$250 mil"><strong>R$150
+                                mil</strong> a <strong>R$250 mil</strong></button>
+                        <button type="button" class="botao-investimento" value="R$150 mil a R$250 mil"><strong>R$150
+                                mil</strong> a <strong>R$250 mil</strong></button>
+                        <button type="button" class="botao-investimento" value="R$250 mil a R$350 mil"><strong>R$250
+                                mil</strong> a <strong>R$350 mil</strong></button>
+                        <button type="button" class="botao-investimento" value="+R$350 mil">+<strong>R$350
+                                mil</strong></button>
+                        <div class="frame-botoes" style="margin-top: 28px;">
+                            <button type="button" id="botaoProximaEtapaStep1" class="botao-proxima-etapa"
+                                disabled>PRÓXIMA
+                                ETAPA</button>
+                        </div>
+                    </div>
+                    <div id="formStep2" style="display: none;">
+                        <p class="sub-aviso"><span><img src="assets/images/form-cadeado.svg" alt=""></span> Campos
+                            indicados
+                            com * são obrigatórios</p>
+                        <div class="label-input">
+                            <label for="name">Nome Completo *</label>
+                            <input type="text" id="name" name="name" placeholder="Digite seu nome completo" required>
+                        </div>
+                        <div class="label-input">
+                            <label for="email">E-mail *</label>
+                            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                        </div>
+                        <div class="label-input-row">
+                            <div class="label-input">
+                                <label for="tel">Celular / Whatsapp *</label>
+                                <input type="tel" id="tel" name="tel" placeholder="(xx) x xxxx-xxxx" required>
+                            </div>
+                            <div class="label-input">
+                                <label for="profession">Profissão *</label>
+                                <div class="select-custom">
+                                    <select name="profession" id="profession" required>
+                                        <option value="" disabled selected>Selecione</option>
+                                        <option value="lojista_acabamentos">Lojista de Acabamentos</option>
+                                        <option value="lojista_madeireira">Lojista de Madeireira</option>
+                                        <option value="lojista_marmoraria">Lojista de Marmoraria</option>
+                                        <option value="lojista_material_construcao">Lojista de Material de Construção
+                                        </option>
+                                        <option value="construtor">Construtor/Construtora</option>
+                                        <option value="especificador">Especificador (Engenheiro, Arquiteto e Designer de
+                                            Interiores)</option>
+                                        <option value="advogado">Advogado(a)</option>
+                                        <option value="bancario">Bancário(a)</option>
+                                        <option value="empresario">Empresário(a)</option>
+                                        <option value="imobiliaria_corretor">Imobiliária / Corretor</option>
+                                        <option value="investidor">Investidor(a)</option>
+                                        <option value="saude">Saúde</option>
+                                        <option value="varejo_outros">Varejo Outros (Alimentação, Automotivo, etc)
+                                        </option>
+                                        <option value="vendas">Vendas</option>
+                                        <option value="comercial">Comercial</option>
+                                        <option value="outros">Outros</option>
+                                    </select>
+                                    <i class="ph ph-caret-down"></i>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="frame-botoes">
+                            <button type="button" id="botaoVoltarStep2" class="botao-voltar"><img
+                                    src="assets/img/icons/seta-voltar.svg" alt=""></button>
+                            <button type="button" id="botaoProximaEtapaStep2" class="botao-proxima-etapa"
+                                disabled>PRÓXIMA
+                                ETAPA</i></button>
+                        </div>
+                    </div>
+                    <div id="formStep3" style="display: none;">
+                        <div class="label-input-row">
+                            <div class="label-input">
+                                <label for="state">Estado *</label>
+                                <div class="select-custom">
+                                    <select name="state" id="state" required>
+                                        <option value="" disabled selected>Selecione o estado</option>
+                                        <option value="12">Acre</option>
+                                        <option value="27">Alagoas</option>
+                                        <option value="13">Amazonas</option>
+                                        <option value="29">Bahia</option>
+                                        <option value="23">Ceará</option>
+                                        <option value="53">Distrito Federal</option>
+                                        <option value="32">Espírito Santo</option>
+                                        <option value="52">Goiás</option>
+                                        <option value="21">Maranhão</option>
+                                        <option value="31">Minas Gerais</option>
+                                        <option value="50">Mato Grosso do Sul</option>
+                                        <option value="51">Mato Grosso</option>
+                                        <option value="15">Pará</option>
+                                        <option value="25">Paraíba</option>
+                                        <option value="26">Pernambuco</option>
+                                        <option value="22">Piauí</option>
+                                        <option value="41">Paraná</option>
+                                        <option value="33">Rio de Janeiro</option>
+                                        <option value="24">Rio Grande do Norte</option>
+                                        <option value="43">Rio Grande do Sul</option>
+                                        <option value="11">Rondônia</option>
+                                        <option value="14">Roraima</option>
+                                        <option value="42">Santa Catarina</option>
+                                        <option value="35">São Paulo</option>
+                                        <option value="28">Sergipe</option>
+                                        <option value="17">Tocantins</option>
+                                    </select>
+                                    <i class="ph ph-caret-down"></i>
+                                </div>
+                            </div>
+                            <div class="label-input">
+                                <label for="city">Cidade *</label>
+                                <div class="select-custom">
+                                    <select name="city" id="city">
+                                        <option value="" disabled selected>Selecione a cidade</option>
+                                    </select>
+                                    <i class="ph ph-caret-down"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="checkbox-group">
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="privacyPolicy" name="privacyPolicy" required checked>
+                                <label for="privacyPolicy">
+                                    Eu concordo com a Política de Privacidade e autorizo o uso dos meus dados conforme
+                                    descrito.
+                                </label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="marketingConsent" name="marketingConsent" checked>
+                                <label for="marketingConsent">
+                                    Concordo em receber E-mails, SMS e Whatsapp da ABC da Construção.
+                                </label>
+                            </div>
+                            <div class="not-robot">
+                                <img src="assets/img/nao-sou-robo.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="frame-botoes">
+                            <button type="button" id="botaoVoltarStep3" class="botao-voltar">
+                                <i class="ph ph-arrow-left"></i>
+                            </button>
+                            <button type="submit" id="botaoEnviar" disabled>ENVIAR DADOS</button>
+                        </div>
+                    </div>
+                    <div id="formStep4" style="display: none;">
+                        <div class="frame-botoes">
+                            <button id="botaoReset" type="reset">RESETAR <img src="assets/img/icons/repeat.svg"
+                                    alt=""></button>
+                            <button id="botaoLinkEspecialista" type="button">FALAR COM ESPECIALISTA</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
