@@ -338,6 +338,7 @@ html {
     align-items: center;
     justify-content: center;
     margin-top: 80px;
+     /*background-image: url(/assets/images/fullbanner-bg-seja-um-franqueado.png);*/
     background-image: url('/abcdaconstrucao-seja-um-franqueado/assets/images/fullbanner-bg-seja-um-franqueado.png');
     background-size: cover;
     background-position: left;
@@ -1485,68 +1486,94 @@ section.modelo-de-negocio {
 .section-formulario {
     display: grid;
     width: 100%;
-    height: 110vh;
+    height: 80vh;
     align-items: center;
     justify-content: center;
     background-color: #333;
+    padding: 0 24px;
 }
 
 .form-container {
     display: flex;
     width: 100%;
     max-width: 1200px;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 50px;
+    margin: 0 auto;
+    padding: 20px;
     justify-content: center;
-    gap: 30px;
+    align-items: center;
 }
 
-
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
     .form-container {
         flex-direction: column;
-        height: auto;
-        align-items: stretch;
+        align-items: center;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .form-container>* {
+        width: 100%;
+
     }
 }
 
-
 .franquia-info {
     display: grid;
+    width: 100%;
     max-width: 580px;
-    height: 500px;
+    grid-template-columns: 1fr;
+    gap: 20px;
 
 }
 
+
+.forms {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 580px;
+    padding: 36px 38px;
+    gap: 24px;
+    border-radius: 24px;
+    background: #ECEFF1;
+    transition: height 0.5s ease;
+    overflow: hidden;
+    min-width: 350px;
+}
+
+@media (max-width: 430px) {
+    .forms {
+        max-width: 390px;
+    }
+}
 
 h1 {
     color: #FFF;
-
-    font-size: 56px;
+    font-size: 40px;
     font-style: normal;
     font-weight: 500;
     line-height: 120%;
+}
 
+@media (max-width: 1000px) {
+    h1 {
+        font-size: 36px;
+    }
 }
 
 p {
-    color: var(--e-commerce-prime-secundary, #848484);
+    color: #969696;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
 }
 
-.forms {
-    display: flex;
-    width: 580px;
-    padding: 36px 38px;
-    flex-direction: column;
-    gap: 24px;
-    border-radius: 24px;
-    background: #ECEFF1;
-    transition: height 0.5s ease;
-    overflow: hidden;
-}
+
+
 
 figure {
     display: flex;
@@ -1721,6 +1748,7 @@ figure {
     font-weight: 500;
     line-height: 18px;
     width: 100%;
+    text-align: left;
 }
 
 /* Estilo padrão do input */
@@ -1742,6 +1770,7 @@ figure {
     line-height: 12px;
     transition: border-color 0.3s, background-color 0.3s;
     box-sizing: border-box;
+    text-align: left;
 }
 
 /* Input inválido APENAS se estiver preenchido */
